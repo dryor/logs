@@ -27,10 +27,12 @@ I'm obsessed with building amazing stuff. This is my public log - what I'm study
 
 ## Quick Start
 
+**Package Manager:** This project uses `pnpm` for package management.
+
 ### 1. Build the site
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 This command executes `build.js` which:
@@ -47,25 +49,31 @@ This command executes `build.js` which:
 
 Serve the built site with any static server:
 
-**Option A: Python**
+**Option A: pnpm (recommended)**
+```bash
+pnpx serve
+# Visit: http://localhost:3000
+```
+
+**Option B: Python**
 ```bash
 python3 -m http.server 8000
 # Visit: http://localhost:8000
 ```
 
-**Option B: Node.js (http-server)**
+**Option C: Node.js (http-server)**
 ```bash
 npx http-server -p 8000
 # Visit: http://localhost:8000
 ```
 
-**Option C: PHP**
+**Option D: PHP**
 ```bash
 php -S localhost:8000
 # Visit: http://localhost:8000
 ```
 
-**Option D: Direct file**
+**Option E: Direct file**
 ```bash
 # Simply open index.html in your browser
 open index.html  # macOS
@@ -86,7 +94,7 @@ Edit `src/logs.json`:
 }
 ```
 
-Then rebuild: `npm run build`
+Then rebuild: `pnpm run build`
 
 ### 4. Deploy
 

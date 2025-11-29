@@ -2,6 +2,7 @@
   "name": "activity-logs",
   "version": "1.0.0",
   "description": "Minimalist terminal-style activity logs",
+  "packageManager": "pnpm@9.0.0",
   "scripts": {
     "build": "node build.js"
   },
