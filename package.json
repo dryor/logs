@@ -1,0 +1,15 @@
+{
+  "name": "activity-logs",
+  "version": "1.0.0",
+  "description": "Minimalist terminal-style activity logs",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "logs",
+    "terminal",
+    "portfolio"
+  ],
+  "author": "dryor",
+  "license": "MIT"
+}
