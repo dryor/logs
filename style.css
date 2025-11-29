@@ -43,11 +43,40 @@ body {
     color: #ffffff;
 }
 
+.alias {
+    color: #666;
+    font-size: 20px;
+    font-weight: normal;
+}
+
 .subtitle {
     color: #888;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.8;
     max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.social-links a {
+    color: #00ff00;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.social-links a:hover {
+    border-bottom-color: #00ff00;
+    opacity: 0.8;
+}
+
+.separator-dot {
+    color: #444;
+    margin: 0 10px;
 }
 
 .separator {
