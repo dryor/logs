@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.terminal {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.terminal-header {
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.prompt {
+    color: #00ff00;
+}
+
+.command {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.content {
+    padding: 20px 0;
+}
+
+.intro h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.separator {
+    border-bottom: 1px solid #333;
+    margin: 30px 0;
+}
+
+.streaming-info {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+#current-time {
+    color: #00ff00;
+}
+
+.logs-container {
+    margin-bottom: 30px;
+}
+
+.log-entry {
+    display: flex;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    transition: opacity 0.2s;
+}
+
+.log-entry:hover {
+    opacity: 0.8;
+}
+
+.log-date {
+    color: #666;
+    min-width: 120px;
+    flex-shrink: 0;
+}
+
+.log-category {
+    color: #00ff00;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.log-title {
+    color: #ffffff;
+    flex: 1;
+}
+
+.log-title a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.log-title a:hover {
+    border-bottom-color: #00ff00;
+}
+
+.log-arrow {
+    color: #666;
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+.cursor-line {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.prompt-symbol {
+    color: #00ff00;
+    margin-right: 10px;
+}
+
+.cursor {
+    color: #00ff00;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .log-entry {
+        flex-wrap: wrap;
+    }
+
+    .log-date,
+    .log-category {
+        min-width: 80px;
+    }
+
+    .log-title {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .log-arrow {
+        display: none;
+    }
+}

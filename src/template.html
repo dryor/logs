@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Log - Your Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="prompt">user@localhost ~ $</span>
+            <span class="command">cat activity.log</span>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h1>Your Name</h1>
+                <p class="subtitle">Building, learning, thinking. Chronological log of everything I'm working on. No filters, just raw activity feed.</p>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="streaming-info">Streaming logs from: <span id="current-time"></span></div>
+
+            <div class="logs-container">
+                <!-- LOGS_PLACEHOLDER -->
+            </div>
+
+            <div class="cursor-line">
+                <span class="prompt-symbol">$</span>
+                <span class="cursor">█</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

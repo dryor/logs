@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2025-09-17",
+    "category": "ARTICLE",
+    "title": "Build fast, change easy: Why your React app should depend on interfaces, not implementations",
+    "url": "https://medium.com/@dryor/build-fast-change-easy-why-your-react-app-should-depend-on-interfaces-not-implementations-17408856dcec"
+  },
+  {
+    "date": "2025-07-13",
+    "category": "ARTICLE",
+    "title": "Stop polluting your React components with analytics code",
+    "url": "https://medium.com/@dryor/stop-polluting-your-react-components-with-analytics-code-81d41aa31bb2"
+  }
+]
