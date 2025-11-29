@@ -36,8 +36,28 @@ const logsHTML = generateLogsHTML(logsData);
 // Inject logs into template
 const output = template.replace('<!-- LOGS_PLACEHOLDER -->', logsHTML);
 
-// Write output file
-fs.writeFileSync(path.join(__dirname, 'index.html'), output, 'utf8');
+// Create dist directory
+const distDir = path.join(__dirname, 'dist');
+if (!fs.existsSync(distDir)) {
+    fs.mkdirSync(distDir);
+}
+
+// Write index.html to dist
+fs.writeFileSync(path.join(distDir, 'index.html'), output, 'utf8');
+
+// Copy style.css to dist
+fs.copyFileSync(
+    path.join(__dirname, 'style.css'),
+    path.join(distDir, 'style.css')
+);
+
+// Copy app.js to dist
+fs.copyFileSync(
+    path.join(__dirname, 'app.js'),
+    path.join(distDir, 'app.js')
+);
 
 console.log('✓ Build completed successfully!');
-console.log(`✓ Generated index.html with ${logsData.length} log entries`);
+console.log(`✓ Generated dist/index.html with ${logsData.length} log entries`);
+console.log('✓ Copied style.css and app.js to dist/');
+console.log('\nReady to deploy: dist/ folder contains all necessary files');
