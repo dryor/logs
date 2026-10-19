@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-19",
+    "category": "ARTICLE",
+    "title": "Running a code quality tool locally for a new repository",
+    "url": "https://medium.com/@dryor/running-a-code-quality-tool-locally-for-a-new-repository-350104de89f5"
+  },
+  {
     "date": "2026-05-05",
     "category": "ARTICLE",
     "title": "Designing Single Flight for the Thundering Herd Problem",
